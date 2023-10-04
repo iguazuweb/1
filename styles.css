@@ -177,6 +177,7 @@ html {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 1000;
+  cursor: pointer;
 }
 
 .modal-content {
@@ -236,6 +237,65 @@ html {
 }
 
 /* fin */
+
+/* Ahora va las clases del Formulario */
+/* Estilos generales del formulario */
+#form1 {
+  width: 85%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para los campos de entrada */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input[type="text"],
+::placeholder {
+  color: rgb(189, 189, 189);
+}
+
+/* Estilos para el campo de archivo */
+input[type="file"] {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+  background-color: #1095c1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
 
 /* ACA VAN LOS ICONOS DE REDES CON FONTAWEASOME */
 
@@ -362,17 +422,22 @@ font-size: 14px;
 
 .image iframe {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 35%);
-  width: 75%;
+  width: 70%;
+  margin: 5px;
 }
 
 /****** ACA PRUEBO IMAGENES QUEDE IGUAL ********/
 
+/* SACO ESTO HOY 03102023
 .image-container {
   display: flex;
-}
+} */
 
+/* aca cambio display:flex: por esto que sigue */
 .contenedorimg {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .image {
@@ -487,6 +552,10 @@ width: 75%;
 
 
 
+
+
+
+
 /* ACA VAN LOS ICONOS DE REDES CON FONTAWEASOME */
 
 .main-footer {
@@ -533,7 +602,35 @@ width: 75%;
   transform: scale(1.05);
 }
 
+/* ESTO ES PARA LOS BOTONES DE LA GALERIA DE FOTOS */
+/* Estilos para las flechas */
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
 
+.nav-buttons button {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-buttons button:hover {
+  background: rgba(0, 0, 0, 0.799);
+}
+/* HASTA ACA LOS BOTONES */
 
 }
 
