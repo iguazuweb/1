@@ -30,7 +30,7 @@
 
   <section class="news">
     <div class="section-content">
-      <h2 class="unica">ÚNICA FRACCIÓN DE 5 has.<br> EN LA MEJOR UBICACIÓN<br>DE PUERTO IGUAZÚ <br> ARGENTINA 
+      <h2 class="unica">ÚNICA FRACCIÓN DE <strong style="color: red;" >5 has.</strong><br> EN LA MEJOR UBICACIÓN<br>DE PUERTO IGUAZÚ <br> ARGENTINA 
         </h2>
       <!-- <p>Últimas noticias y novedades emocionantes.</p> -->
       <!-- Agrega más contenido de noticias -->
@@ -175,12 +175,72 @@
 <div class="image">
     <img src="img/24.jpg" alt="Imagen 24">
 </div>
+<div class="image">
+  <img src="img/25.jpg" alt="Imagen 25">
+</div>
+<!-- <div class="image">
+  <img src="img/26.jpg" alt="Imagen 26">
+</div> -->
+<div class="image">
+  <img src="img/27.jpg" alt="Imagen 27">
+</div>
+<div class="image">
+  <img src="img/28.jpg" alt="Imagen 28">
+</div>
 
 
     </div>
     
   </div>
   </section>
+
+
+
+<!-- ACA EMPIEZA GALERIA DE CLIPS/VIDEOS CON UNA IMAGEN DE PORTADA Y LUEGO AL CLICK HACE PLAY-->
+
+<section class="video-grid">
+  <div class="section-content">
+    <h2 id="h2video" >Galería de Videos</h2>
+    <hr class="hrgral">
+    <div class="video-container">
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 1" onclick="playVideo(this, 'videos/1.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 2" onclick="playVideo(this, 'videos/2.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/3.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/4.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/5.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/6.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/7.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/8.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/9.mp4')">
+      </div>
+      <div class="video">
+        <img src="videos/v1.jpg" alt="Vista previa Video 3" onclick="playVideo(this, 'videos/10.mp4')">
+      </div>
+      
+      <!-- Repite esta estructura para más videos -->
+    </div>
+  </div>
+</section>
+
+<!-- HASTA ACA VA LA SECCION DE VIDEOS OK OK -->
+
 
 
 
@@ -235,12 +295,13 @@
       <h2 class="unica">Iguazú - Argentina.</h2>
       <!-- Agrega más contenido de información -->
       <br>
-      <p>Precio a Consultar.</p>
+      <p>Precio de <strong style="color: red;" >Venta</strong> a Consultar.</p>
     </div>
   </section>
 
 <!-- Aca voy agregar el nuevo formulario  -->
-<section class="info">
+
+<!-- <ACA VA SOLO EL H2 Y HR>
   <div class="section-content">
     <h2>Contacto</h2>
     <hr class="hrgral">
@@ -262,14 +323,34 @@
 
         <button type="submit">Enviar</button>
     </form>
-
-    <!-- Agrega más contenido de información -->
+  </div>
+</section> -->
+<br>
+<section class="info">
+  <div class="section-co">
+    <h2>Formulario de Consultas</h2>
+    <hr class="hrgral">
+    <br>
   </div>
 </section>
 
 
+<!-- NUEVO FORMULARIO -->
 
-
+<!-- modify this form HTML and place wherever you want your form -->
+<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mayglako" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nombre Completo</label>
+    <input type="text" name="name" id="full-name" placeholder="Nombre y apellido" required="">
+    <label for="email-address">Email </label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@email.com.ar" required="">
+    <label for="message">Mensaje</label>
+    <textarea rows="5" name="message" id="message" placeholder="Su consulta será respondida a la brevedad. Muchas gracias por su contacto." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+<br>
 <!-- Hasta aca el Formulario nuevo. -->
 
 
@@ -288,6 +369,18 @@
   </footer>
 
   <a href="#top" class="scroll-to-top">↑</a>
+
+<!-- ACA VA EL SCRIPT DEL FORMULARIO NUEVO -->
+<!-- Read the Formbutton docs at formspree.io/formbutton/docs. See more examples at codepen.io/formspree -->
+<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  
+</script>
+ 
+<!-- HASTA ACA EL SCRIPT FORM -->
 
   <script src="scripts.js"></script>
 </body>

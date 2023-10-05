@@ -103,7 +103,7 @@ html {
   font-size: 1.3rem;
   line-height: 1.5;
   padding: 2px;
-
+  text-align: center;
 }
 
 #h2tur {
@@ -128,8 +128,11 @@ html {
   gap: 10px; */ */
  /*  /* max-width: 800px;
   margin: 0 auto;
-} */
+} aca abajo modifico*/
 
+#imag {
+  display: block;
+}
 
 .image-container {
   display: flex;
@@ -238,16 +241,72 @@ html {
 
 /* fin */
 
+/* Seccion de Videos */
+
+/* Estilo para la sección de la galería */
+.video-grid {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Estilo para el contenedor de videos */
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo para cada video */
+.video {
+  width: calc(50% - 8px); /* Para mostrar 2 videos por fila con un espacio de 8px entre ellos */
+  margin-bottom: 8px;
+  position: relative;
+}
+
+/* Estilo para los iframes de video */
+.video iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Estilo para las imágenes de vista previa */
+.video img {
+  max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto original */
+  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  transition: transform 0.3s ease-in-out;
+}
+
+.video img:hover {
+  transform: scale(1.02);
+}
+
+#h2video {
+  font-size: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+
 /* Ahora va las clases del Formulario */
 /* Estilos generales del formulario */
-#form1 {
-  width: 85%;
+#fs-frm {
+  width: 65%;
   margin: 10px auto;
   padding: 20px;
   background-color: #f7f7f7;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#fs-frm-inputs {
+  border: none;
 }
 
 /* Estilos para las etiquetas de los campos */
@@ -281,7 +340,7 @@ input[type="file"] {
 }
 
 /* Estilos para el botón de enviar */
-button[type="submit"] {
+input[type="submit"] {
   background-color: #1095c1;
   color: #fff;
   border: none;
@@ -291,7 +350,7 @@ button[type="submit"] {
   transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
+input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
@@ -351,9 +410,14 @@ font-size: 14px;
 }
 
 
+
 /* ACA VAMOS A EMPEZAR A ARMAR RESPONSIVE - ARRIBA CELU ABAJO PANTALLAS GRANDES*/
 
-
+.contenedormap .image {
+  flex: 100%; /* Para que los mapas ocupen todo el ancho en dispositivos móviles */
+  margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
+  display:grid ;
+}
 
 
 
@@ -407,11 +471,26 @@ font-size: 14px;
 
 
 .info p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 2;
   padding: 25px;
-
+  text-align: center;
+/* Aca va efecto de pintar letras*/
+color: #0000;
+background: 
+  linear-gradient(90deg,#1095c1 50%,#000 0) 
+  var(--_p,100%)/200% no-repeat;
+-webkit-background-clip: text;
+        background-clip: text;
+transition: .9s;
 }
+
+
+.info p:hover {
+  cursor: pointer;
+  --_p: 0%;
+}
+
 
 /* Style de HR */
 
@@ -426,12 +505,19 @@ font-size: 14px;
   margin: 5px;
 }
 
-/****** ACA PRUEBO IMAGENES QUEDE IGUAL ********/
 
-/* SACO ESTO HOY 03102023
-.image-container {
+/* Estilo para los mapas */
+.contenedormap {
   display: flex;
-} */
+  flex-wrap: wrap; /* Para que los mapas se envuelvan en dispositivos pequeños */
+  justify-content: space-between; /* Espaciado entre los mapas en pantallas grandes */
+}
+
+.contenedormap .image {
+display: flex; 
+ margin-bottom: 20px; /* Espacio entre los mapas en dispositivos móviles */
+}
+
 
 /* aca cambio display:flex: por esto que sigue */
 .contenedorimg {
@@ -439,6 +525,7 @@ font-size: 14px;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
+
 
 .image {
   display: flex;
@@ -631,6 +718,8 @@ width: 75%;
   background: rgba(0, 0, 0, 0.799);
 }
 /* HASTA ACA LOS BOTONES */
+
+
 
 }
 
