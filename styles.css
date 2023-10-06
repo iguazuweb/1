@@ -774,9 +774,3 @@ width: 75%;
 
 }
 
-/* Ocultar el botón de reproducción en dispositivos móviles */
-@media (max-width: 767px) {
-  .video video::-webkit-media-controls-start-playback-button {
-    display: none !important;
-  }
-}
