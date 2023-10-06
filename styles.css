@@ -125,14 +125,14 @@ html {
 /* .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px; */ */
+  gap: 10px; */ 
  /*  /* max-width: 800px;
   margin: 0 auto;
 } aca abajo modifico*/
 
-#imag {
+/* #imag {
   display: block;
-}
+} */
 
 .image-container {
   display: flex;
@@ -415,6 +415,7 @@ font-size: 14px;
   flex: 100%; /* Para que los mapas ocupen todo el ancho en dispositivos móviles */
   margin-right: 0; /* Eliminar el margen derecho en dispositivos móviles */
   display:grid ;
+  justify-items: center;
 }
 
 
@@ -603,9 +604,10 @@ display: flex;
 /* ES HASTA ACA */
 
 .lim {
-  width: 50%;
-  border-radius: 24px 4px 24px 4px;
+  width: 45%;
+  /* border-radius: 24px 4px 24px 4px; */
   box-shadow: 4px 2px 4px 0px rgb(0 0 0 / 29%);
+  margin: 0 8px;
 
 }
 
