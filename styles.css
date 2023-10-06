@@ -159,8 +159,9 @@ html {
 }
 
 .image img {
-  max-width: 85%;
-  max-height: 85%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 5px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -418,6 +419,37 @@ font-size: 14px;
   justify-items: center;
 }
 
+/* ESTO ES PARA LOS BOTONES DE LA GALERIA DE FOTOS */
+/* Estilos para las flechas */
+.nav-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.nav-buttons button {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-buttons button:hover {
+  background: rgba(0, 0, 0, 0.799);
+}
+/* HASTA ACA LOS BOTONES */
+
+
 
 
 /* Aca carga en pantalla grande mas de 992px en adelante, debe tener min 992 para arriba */
@@ -511,6 +543,16 @@ transition: .9s;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 35%);
   width: 70%;
   margin: 5px;
+}
+
+.image img {
+  max-width: 85%;
+  max-height: 85%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image img:hover {
+  transform: scale(1.1);
 }
 
 
