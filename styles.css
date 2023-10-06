@@ -241,13 +241,13 @@ html {
 
 /* fin */
 
-/* Seccion de Videos */
+/* NUEVA SECCION DE VIDEOS  */
 
 /* Estilo para la sección de la galería */
-.video-grid {
+/* .video-grid {
   padding: 20px;
   background-color: #f2f2f2;
-}
+} */
 
 /* Estilo para el contenedor de videos */
 .video-container {
@@ -266,23 +266,24 @@ html {
 }
 
 /* Estilo para los iframes de video */
-.video iframe {
+.video video {
   width: 100%;
-  height: 100%;
+  height: auto; /* Ajustar la altura automáticamente para mantener la proporción de aspecto original */
   border: none;
 }
 
 /* Estilo para las imágenes de vista previa */
 .video img {
-  max-width: 100%; /* Ajusta el ancho máximo al 100% del contenedor */
-  height: auto; /* Mantiene la proporción de aspecto original */
-  cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+  max-width: 100%; /* Ajustar el ancho máximo al 100% del contenedor */
+  height: auto; /* Mantener la proporción de aspecto original */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre la imagen */
   transition: transform 0.3s ease-in-out;
 }
 
 .video img:hover {
   transform: scale(1.02);
 }
+
 
 #h2video {
   font-size: 2rem;
@@ -476,7 +477,7 @@ font-size: 14px;
   padding: 25px;
   text-align: center;
 /* Aca va efecto de pintar letras*/
-color: #0000;
+/* color: #0000;
 background: 
   linear-gradient(90deg,#1095c1 50%,#000 0) 
   var(--_p,100%)/200% no-repeat;
@@ -489,8 +490,17 @@ transition: .9s;
 .info p:hover {
   cursor: pointer;
   --_p: 0%;
+} */
 }
 
+.ppp {
+  transition: all .9s;
+}
+
+.ppp:hover {
+  cursor: pointer;
+  font-size: 1.9rem;
+}
 
 /* Style de HR */
 

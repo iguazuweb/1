@@ -30,10 +30,10 @@
         closeModal();
       }
     }); */
-
 /* HASTA ACA EL QUE ANDA OKOK  */ 
 
-/* ACA VA LA NUEVA PRUEBA CON TECLADO */
+
+/******** GALERIA DE FOTOS MODAL -ACA VA LA NUEVA PRUEBA CON TECLADO ************/
 
 const images = document.querySelectorAll('.image img');
 let currentImageIndex = 0;
@@ -96,7 +96,7 @@ function handleKeyPress(event) {
 }
 
 
-// fin de la nueva prueba //
+// FIN DE LA GALERIA DE IMAGENES MODAL OK OK //
 
 
 
@@ -109,7 +109,7 @@ document.addEventListener('contextmenu', function (e) {
 // ESTO ES UN SCRIPT PARA QUE LOS VIDEO TENGAN UNA FOTO DE PORTADA Y AL  HACER CLICK EMPIEZA EL MISMO //
 
 
-function playVideo(previewImage, videoUrl) {
+/* function playVideo(previewImage, videoUrl) {
   // Reemplaza la imagen de vista previa por el iframe del video
   const videoIframe = document.createElement("iframe");
   videoIframe.src = videoUrl;
@@ -118,4 +118,20 @@ function playVideo(previewImage, videoUrl) {
 
   // Inserta el iframe en lugar de la imagen
   previewImage.parentNode.replaceChild(videoIframe, previewImage);
-}
+} */
+
+
+// 
+
+// JavaScript para controlar la reproducción del video
+const headerVideo = document.getElementById('headerVideo');
+const playButton = document.getElementById('playButton');
+
+playButton.addEventListener('click', function () {
+  if (headerVideo.paused) {
+    headerVideo.play();
+    playButton.style.display = 'none'; // Ocultar el botón cuando se inicia la reproducción
+  }
+});
+
+// Puedes agregar estilos CSS para el botón de reproducción si es necesario
